@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>restaurant | BiteCraft</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/webfonts/" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+  </head>
+  <body class="bg-dark text-light">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-3 fixed-top text-light bg-dark bg-opacity-25"
+      >
+        <div class="container-fluid">
+          <img src="images/logo.png" alt="logo" width="40" height="40" />
+          <a
+            class="navbar-brand fs-3 border-end border-secondary pe-3 border-2"
+            href="#"
+            style="color: var(--primary-color)"
+            ><b>&nbsp;BiteCraft</b></a
+          >
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-light dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Pizza</a></li>
+                  <li><a class="dropdown-item" href="#">Burger</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Pasta</a></li>
+                  <li><a class="dropdown-item" href="#">Fries</a></li>
+                  <li><a class="dropdown-item" href="#">Crispy fries</a></li>
+                  <li><a class="dropdown-item" href="#">More...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-warning me-2" type="submit">Search</button>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                type="button"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 shadow-lg rounded-4 ub-modal">
+            <div class="modal-header border-0 pb-0">
+              <h1 class="fw-bold mb-0 fs-3 text-warning">Sign up for free</h1>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body pt-3">
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control ub-input rounded-3"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput" class="text-secondary"
+                    >Email address</label
+                  >
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control ub-input rounded-3"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword" class="text-secondary"
+                    >Password</label
+                  >
+                </div>
+
+                <button
+                  class="w-100 mb-2 btn btn-warning fw-semibold rounded-3 ub-btn"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+
+                <small class="text-secondary d-block mb-3">
+                  By clicking Sign in, you agree to the terms of use.
+                </small>
+
+                <hr class="my-4 border-secondary opacity-25" />
+
+                <h2 class="fs-6 fw-bold mb-3 text-secondary">
+                  Or use a third-party
+                </h2>
+
+                <!-- Google -->
+                <button
+                  class="w-100 py-2 mb-2 btn ub-social-btn ub-google rounded-3"
+                  type="button"
+                >
+                  <i class="fa-brands fa-google me-2"></i> Sign up with Google
+                </button>
+
+                <!-- Facebook -->
+                <button
+                  class="w-100 py-2 mb-2 btn ub-social-btn ub-facebook rounded-3"
+                  type="button"
+                >
+                  <i class="fa-brands fa-facebook-f me-2"></i> Sign up with
+                  Facebook
+                </button>
+
+                <!-- GitHub -->
+                <button
+                  class="w-100 py-2 mb-2 btn ub-social-btn ub-github rounded-3"
+                  type="button"
+                >
+                  <i class="fa-brands fa-github me-2"></i> Sign up with GitHub
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ////////////////////////////////////////////////////////////// -->
+    <main>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide vh-100"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+
+        <div class="carousel-inner h-100">
+          <!-- 1) BURGER -->
+          <div class="carousel-item active h-100 ub-slide">
+            <img
+              src="images/hero-bg.jpg"
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Burger"
+            />
+
+            <div class="carousel-caption ub-caption text-start">
+              <div
+                class="ub-card p-4 p-md-5 rounded-4 border border-light shadow-lg"
+              >
+                <h1 class="ub-title mb-2">BURGER</h1>
+                <p class="ub-text mb-4">
+                  Premium beef, melted cheese, and golden fries — one bite and
+                  you're hooked.
+                </p>
+
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="#menu" class="btn btn-warning px-4 fw-semibold"
+                    >Order Now</a
+                  >
+                  <a
+                    href="tel:+201000000000"
+                    class="btn btn-outline-warning px-4 fw-semibold text-light"
+                    >Call Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2) PASTA -->
+          <div class="carousel-item h-100 ub-slide">
+            <img
+              src="images/hero-2.png"
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Pasta"
+            />
+
+            <div class="carousel-caption ub-caption text-start">
+              <div
+                class="ub-card p-4 p-md-5 rounded-4 border border-light shadow-lg"
+              >
+                <h1 class="ub-title mb-2">PASTA</h1>
+                <p class="ub-text mb-4">
+                  Creamy sauces, rich flavors, and fresh herbs — comfort food
+                  done right.
+                </p>
+
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="#menu" class="btn btn-warning px-4 fw-semibold"
+                    >View Pasta</a
+                  >
+                  <a
+                    href="tel:+201000000000"
+                    class="btn btn-outline-warning px-4 fw-semibold text-light"
+                    >Call Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3) PIZZA -->
+          <div class="carousel-item h-100 ub-slide">
+            <img
+              src="images/hero3.jpeg"
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Pizza"
+            />
+
+            <div class="carousel-caption ub-caption text-start">
+              <div
+                class="ub-card p-4 p-md-5 rounded-4 border border-light shadow-lg"
+              >
+                <h1 class="ub-title mb-2">PIZZA</h1>
+                <p class="ub-text mb-4">
+                  Handcrafted crust, premium cheese, bold toppings — baked fresh
+                  every day.
+                </p>
+
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="#menu" class="btn btn-warning px-4 fw-semibold"
+                    >View Pizza</a
+                  >
+                  <a
+                    href="tel:+201000000000"
+                    class="btn btn-outline-warning px-4 fw-semibold text-light"
+                    >Call Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4) FRIES -->
+          <div class="carousel-item h-100 ub-slide">
+            <img
+              src="images/heri4.png"
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Fries"
+            />
+
+            <div class="carousel-caption ub-caption text-start">
+              <div
+                class="ub-card p-4 p-md-5 rounded-4 border border-light shadow-lg"
+              >
+                <h1 class="ub-title mb-2">FRIES</h1>
+                <p class="ub-text mb-4">
+                  Crispy outside, fluffy inside — the perfect side for every
+                  meal.
+                </p>
+
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="#menu" class="btn btn-warning px-4 fw-semibold"
+                    >View Fries</a
+                  >
+                  <a
+                    href="tel:+201000000000"
+                    class="btn btn-outline-warning px-4 fw-semibold text-light"
+                    >Call Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div
+        class="d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 gap-3 social-icons opacity-50"
+      >
+        <a href="#" class="text-warning"
+          ><i class="fab fa-facebook-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-twitter-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-whatsapp-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-instagram-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+      </div>
+    </main>
+
+    <!-- ///////////////////////////////////////////////// -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <!-- Title -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-warning">Welcome to BiteCraft</h2>
+          <p class="text-muted mt-3 fs-5">
+            Where bold flavors meet modern taste
+          </p>
+        </div>
+
+        <!-- Content -->
+        <div class="row align-items-center g-5">
+          <!-- Text -->
+          <div class="col-lg-6">
+            <h3 class="fw-semibold mb-3">
+              Crafted with Passion, Served with Love
+            </h3>
+
+            <p class="text-secondary fs-6">
+              At <strong>BiteCraft</strong>, we believe great food is more than
+              just a meal — it’s an experience. From juicy burgers and artisan
+              pizzas to fresh salads and crispy chicken, every bite is made with
+              premium ingredients and bold flavors.
+            </p>
+
+            <p class="text-secondary fs-6">
+              Whether you're dining in, grabbing a quick bite, or ordering
+              online, BiteCraft delivers comfort, quality, and unforgettable
+              taste — fast.
+            </p>
+
+            <div class="mt-4">
+              <a href="#" class="btn btn-warning px-4 fw-semibold me-2">
+                Explore Menu
+              </a>
+              <a href="#" class="btn btn-outline-warning px-4 fw-semibold">
+                Contact Us
+              </a>
+            </div>
+          </div>
+
+          <!-- Features -->
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="p-4 bg-dark shadow-sm rounded-4 h-100 text-center">
+                  <i class="fa-solid fa-burger fs-1 text-warning mb-3"></i>
+                  <h6 class="fw-bold">Fresh Ingredients</h6>
+                  <p class="text-muted small mb-0">
+                    Only the finest ingredients, always fresh.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-4 bg-dark shadow-sm rounded-4 h-100 text-center">
+                  <i class="fa-solid fa-pizza-slice fs-1 text-warning mb-3"></i>
+                  <h6 class="fw-bold">Signature Recipes</h6>
+                  <p class="text-muted small mb-0">
+                    Unique flavors you won’t find anywhere else.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-4 bg-dark shadow-sm rounded-4 h-100 text-center">
+                  <i class="fa-solid fa-bolt fs-1 text-warning mb-3"></i>
+                  <h6 class="fw-bold">Fast Service</h6>
+                  <p class="text-muted small mb-0">
+                    Delicious food, served right on time.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-4 bg-dark shadow-sm rounded-4 h-100 text-center">
+                  <i class="fa-solid fa-heart fs-1 text-warning mb-3"></i>
+                  <h6 class="fw-bold">Loved by Customers</h6>
+                  <p class="text-muted small mb-0">
+                    Trusted by food lovers every day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////// -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">
+            The Most Famous <span class="text-warning">Dishes</span> at Urban
+            Bite
+          </h2>
+          <p class="text-muted fs-5 mt-2">
+            Discover our customer favorites, crafted with passion and bold
+            flavors
+          </p>
+        </div>
+
+        <!-- Accordion -->
+        <div
+          class="accordion accordion-flush shadow-sm rounded-4"
+          id="menuAccordion"
+        >
+          <!-- Burgers -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#burger"
+              >
+                🍔 Signature Burgers
+              </button>
+            </h2>
+            <div
+              id="burger"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#menuAccordion"
+            >
+              <div class="accordion-body text-secondary">
+                Our burgers are made with 100% premium beef, fresh buns, and
+                homemade sauces. Juicy, flavorful, and grilled to perfection —
+                every bite delivers pure satisfaction.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#pizza"
+              >
+                🍕 Artisan Pizza
+              </button>
+            </h2>
+            <div
+              id="pizza"
+              class="accordion-collapse collapse"
+              data-bs-parent="#menuAccordion"
+            >
+              <div class="accordion-body text-secondary">
+                Hand-stretched dough, rich tomato sauce, premium cheese, and
+                carefully selected toppings. Our pizzas are baked fresh to give
+                you the perfect balance of crunch and melt.
+              </div>
+            </div>
+          </div>
+
+          <!-- Fries -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#fries"
+              >
+                🍟 Crispy Fries
+              </button>
+            </h2>
+            <div
+              id="fries"
+              class="accordion-collapse collapse"
+              data-bs-parent="#menuAccordion"
+            >
+              <div class="accordion-body text-secondary">
+                Golden, crispy on the outside and fluffy on the inside. Served
+                plain or seasoned — the perfect side to any meal.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pasta -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#pasta"
+              >
+                🍝 Fresh Pasta
+              </button>
+            </h2>
+            <div
+              id="pasta"
+              class="accordion-collapse collapse"
+              data-bs-parent="#menuAccordion"
+            >
+              <div class="accordion-body text-secondary">
+                Freshly prepared pasta with rich sauces and authentic flavors.
+                From creamy classics to bold tomato-based recipes, every plate
+                is comforting and delicious.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">
+            <span class="text-warning">Have a Special Request?</span>
+          </h2>
+          <p class="text-muted fs-5">
+            Customize your meal just the way you like it
+          </p>
+        </div>
+
+        <div class="p-4 rounded-4 shadow-sm bg-white">
+          <label class="fw-semibold mb-2">Write your request here</label>
+          <textarea
+            class="form-control mb-3"
+            rows="5"
+            placeholder="Extra cheese, no onions, spicy sauce, or any special instructions..."
+          ></textarea>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-warning fw-semibold px-4">
+              Send Request
+            </button>
+            <button class="btn btn-outline-warning fw-semibold px-4">
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-dark bg-opacity-10">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">
+            Share Your <span class="text-warning">Experience</span>
+          </h2>
+          <p class="text-muted fs-5">Your feedback helps us serve you better</p>
+        </div>
+
+        <div class="p-4 rounded-4 shadow-sm bg-white">
+          <label class="fw-semibold mb-2">Tell us about your experience</label>
+          <textarea
+            class="form-control mb-3"
+            rows="5"
+            placeholder="How was the food? The service? We'd love to hear from you."
+          ></textarea>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-warning fw-semibold px-4">
+              Submit Feedback
+            </button>
+            <button class="btn btn-outline-warning fw-semibold px-4">
+              Copy Text
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <section class="py-5 bg-light" id="menu">
+      <div class="container">
+        <!-- Title -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold"><span class="text-warning">Our Menu</span></h2>
+          <ul class="nav justify-content-center gap-3 mb-4">
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-dark rounded-pill px-4 fw-semibold text-light"
+                href="#menu"
+                >All</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="#menu">Burger</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="#menu">Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="#menu">Pasta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="#menu">Fries</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cards -->
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="special-card col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f1.png"
+                  class="img-fluid menu-img"
+                  alt="Pizza"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Delicious Pizza</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Fresh dough, premium cheese, and rich tomato sauce baked to
+                  perfection.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$17</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="special-card col-sm-6 col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f2.png"
+                  class="img-fluid menu-img"
+                  alt="Burger"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Delicious Burger</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  100% beef patty, fresh veggies, and our signature sauce —
+                  juicy & perfect.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$15</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="special-card col-sm-6 col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f4.png"
+                  class="img-fluid menu-img"
+                  alt="Pasta"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Delicious Pasta</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Fresh pasta with rich sauces — comforting, creamy, and full of
+                  flavor.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$20</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="special-card col-sm-6 col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f5.png"
+                  class="img-fluid menu-img"
+                  alt="Pasta"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">French Fries</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Golden, crispy fries — the perfect side for any meal you
+                  wanted to order.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$8</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="special-card col-sm-6 col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f3.png"
+                  class="img-fluid menu-img"
+                  alt="Pizza"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Pepperoni Pizza</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Classic pepperoni with melted cheese — a customer favorite.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$18</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="special-card col-sm-6 col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f7.png"
+                  class="img-fluid menu-img"
+                  alt="Burger"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Double Burger</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Double patty, extra cheese, extra flavor — for real burger
+                  lovers.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$19</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="special-card col-sm-6 col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f2.png"
+                  class="img-fluid menu-img"
+                  alt="Burger"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Cheese Burger</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Juicy beef patty topped with melted cheese and our special
+                  sauce.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$16</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="special-card col-sm-6 col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f8.png"
+                  class="img-fluid menu-img"
+                  alt="Burger"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Spicy Burger</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Spicy beef burger with fresh veggies for real heat lovers and
+                  some of our special soas.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$18</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="special-card col-lg-4">
+            <div
+              class="card border-3 shadow-sm rounded-4 overflow-hidden h-100"
+            >
+              <div
+                class="bg-light d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="images/f9.png"
+                  class="img-fluid menu-img"
+                  alt="Pasta"
+                  style="max-height: 160px"
+                />
+              </div>
+
+              <div class="bg-dark text-light p-4">
+                <h5 class="fw-bold mb-2">Creamy Pasta</h5>
+                <p class="text-light opacity-75 small mb-4">
+                  Creamy pasta with rich sauce and fresh ingredients — smooth &
+                  comforting.
+                </p>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="fw-bold">$21</span>
+                  <a
+                    href="#"
+                    class="btn btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-warning fw-semibold px-5 py-2"
+            >View Full Menu</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <!-- Title -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">
+            <span class="text-warning">Meet Our Chefs</span>
+          </h2>
+          <p class="text-muted fs-5">
+            World-class chefs crafting unforgettable flavors with very high
+            experience in most different flavors
+          </p>
+        </div>
+
+        <!-- Chefs -->
+        <div class="row g-4 justify-content-center">
+          <!-- Chef 1 -->
+          <div class="col-md-4">
+            <div
+              class="card chef-card border-3 shadow-sm rounded-4 h-100 text-center p-4"
+            >
+              <img
+                src="images/chef1.png"
+                class="rounded-circle mx-auto mb-3"
+                alt="Chef"
+                width="140"
+                height="140"
+                style="object-fit: cover"
+              />
+              <h5 class="fw-bold mb-1">Chef Marco Rossi</h5>
+              <p class="text-warning fw-semibold mb-2">
+                Italian Cuisine Expert
+              </p>
+              <p class="text-muted small">
+                With over 15 years of experience in Italy’s finest kitchens,
+                Chef Marco brings authentic flavors and passion to every dish.
+              </p>
+
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="#" class="text-dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef 2 -->
+          <div class="col-md-4">
+            <div
+              class="card chef-card border-3 shadow-sm rounded-4 h-100 text-center p-4"
+            >
+              <img
+                src="images/chef2.png"
+                class="rounded-circle mx-auto mb-3"
+                alt="Chef"
+                width="140"
+                height="140"
+                style="object-fit: cover"
+              />
+              <h5 class="fw-bold mb-1">Chef James Walker</h5>
+              <p class="text-warning fw-semibold mb-2">
+                Burger & Grill Specialist
+              </p>
+              <p class="text-muted small">
+                A master of premium burgers and grilled perfection, Chef James
+                creates bold, juicy flavors loved worldwide.
+              </p>
+
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="#" class="text-dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef 3 -->
+          <div class="col-md-4">
+            <div
+              class="card chef-card border-3 shadow-sm rounded-4 h-100 text-center p-4"
+            >
+              <img
+                src="images/chef 3.png"
+                class="rounded-circle mx-auto mb-3"
+                alt="Chef"
+                width="140"
+                height="140"
+                style="object-fit: cover"
+              />
+              <h5 class="fw-bold mb-1">Chef Lina Moreau</h5>
+              <p class="text-warning fw-semibold mb-2">Pasta & Sauce Creator</p>
+              <p class="text-muted small">
+                Known for her refined sauces and creative pasta dishes, Chef
+                Lina blends tradition with modern taste.
+              </p>
+
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="#" class="text-dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ////////////////////////////////////////////////////// -->
+    <section class="py-5" id="restaurant-news">
+      <h3 class="text-center text-warning mb-4" style="margin-top: 50px">
+        <b><i>Updates</i></b>
+      </h3>
+
+      <div class="container-md wider-container px-0 px-md-3">
+        <!-- Card 1 (Pizza - Image Right on md+) -->
+        <div class="card mb-4 w-100 px-2 news-card">
+          <div class="row g-0 align-items-stretch news-row">
+            <!-- Desktop image (Right) -->
+            <div
+              class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block"
+            >
+              <div class="special-image special-image1 h-100"></div>
+            </div>
+
+            <!-- Mobile image (Top, no slant) -->
+            <div
+              class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect"
+            >
+              <div class="special-image special-image1"></div>
+            </div>
+
+            <div class="col-md-8 d-flex order-2 order-md-1">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>Artisan Pizza</i></b>
+                </h3>
+
+                <p
+                  class="card-text border-bottom d-inline-block border-4 border-warning pb-2 small fw-semibold"
+                >
+                  Fresh dough • Premium cheese • Bold toppings
+                </p>
+
+                <p class="card-text fs-6 d-none d-md-block text-secondary">
+                  Hand-stretched crust with rich tomato sauce and perfectly
+                  melted cheese — baked fresh for the ideal crunch. Try our
+                  signature toppings and discover your new favorite slice.
+                </p>
+
+                <p
+                  class="card-text d-md-none d-block text-secondary"
+                  style="font-size: 13px"
+                >
+                  Freshly baked pizza with rich sauce, premium cheese, and bold
+                  toppings — made for the perfect bite.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="btn btn-warning text-dark px-3 special-btn"
+                    >🍕 Pizza</span
+                  >
+                  <span class="btn btn-dark text-light px-3 special-btn"
+                    >⭐ Best Seller</span
+                  >
+                  <a
+                    href="#menu"
+                    class="btn btn-warning text-dark px-3 special-btn"
+                    >View Pizza</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 (Burger - Image Left on md+) -->
+        <div class="card mb-4 w-100 px-2 news-card">
+          <div class="row g-0 align-items-stretch news-row">
+            <!-- Desktop image (Left) -->
+            <div class="col-md-4 d-none d-md-block clip-slant2">
+              <div class="special-image special-image2 h-100"></div>
+            </div>
+
+            <!-- Mobile image -->
+            <div class="col-md-4 d-md-none d-block clip-rect">
+              <div class="special-image special-image2"></div>
+            </div>
+
+            <div class="col-md-8 d-flex">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>Signature Burgers</i></b>
+                </h3>
+
+                <p
+                  class="card-text border-bottom d-inline-block border-4 border-warning pb-2 small fw-semibold"
+                >
+                  Juicy patties • Fresh buns • House sauces
+                </p>
+
+                <p class="card-text fs-6 d-none d-md-block text-secondary">
+                  Premium beef, fresh veggies, and bold sauces — grilled to
+                  perfection. Built for flavor and made to satisfy every time.
+                </p>
+
+                <p
+                  class="card-text d-md-none d-block text-secondary"
+                  style="font-size: 13px"
+                >
+                  Juicy burgers made with premium beef and our special sauce —
+                  grilled to perfection.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="btn btn-warning text-dark px-3 special-btn"
+                    >🍔 Burger</span
+                  >
+                  <span class="btn btn-dark text-light px-3 special-btn"
+                    >🔥 Hot</span
+                  >
+                  <a
+                    href="#menu"
+                    class="btn btn-warning text-dark px-3 special-btn"
+                    >View Burgers</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 (Pasta - Image Right on md+) -->
+        <div class="card mb-4 w-100 px-2 news-card">
+          <div class="row g-0 align-items-stretch news-row">
+            <!-- Desktop image (Right) -->
+            <div
+              class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block"
+            >
+              <div class="special-image special-image3 h-100"></div>
+            </div>
+
+            <!-- Mobile image -->
+            <div
+              class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect"
+            >
+              <div class="special-image special-image3"></div>
+            </div>
+
+            <div class="col-md-8 d-flex order-2 order-md-1">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>Fresh Pasta</i></b>
+                </h3>
+
+                <p
+                  class="card-text border-bottom d-inline-block border-4 border-warning pb-2 small fw-semibold"
+                >
+                  Creamy sauces • Rich flavors • Comfort food
+                </p>
+
+                <p class="card-text fs-6 d-none d-md-block text-secondary">
+                  From creamy classics to rich tomato recipes — perfectly cooked
+                  pasta, generously sauced, and finished with fresh herbs for
+                  the ultimate comfort meal.
+                </p>
+
+                <p
+                  class="card-text d-md-none d-block text-secondary"
+                  style="font-size: 13px"
+                >
+                  Comfort pasta with rich sauces and fresh herbs — creamy, warm,
+                  and delicious.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="btn btn-warning text-dark px-3 special-btn"
+                    >🍝 Pasta</span
+                  >
+                  <span class="btn btn-dark text-light px-3 special-btn"
+                    >🌿 Fresh</span
+                  >
+                  <a
+                    href="#menu"
+                    class="btn btn-warning text-dark px-3 special-btn"
+                    >View Pasta</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 (Fries - Image Left on md+) -->
+        <div class="card mb-4 w-100 px-2 news-card">
+          <div class="row g-0 align-items-stretch news-row">
+            <!-- Desktop image (Left) -->
+            <div class="col-md-4 d-none d-md-block clip-slant2">
+              <div class="special-image special-image4 h-100"></div>
+            </div>
+
+            <!-- Mobile image -->
+            <div class="col-md-4 d-md-none d-block clip-rect">
+              <div class="special-image special-image4"></div>
+            </div>
+
+            <div class="col-md-8 d-flex">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>Crispy Fries</i></b>
+                </h3>
+
+                <p
+                  class="card-text border-bottom d-inline-block border-4 border-warning pb-2 small fw-semibold"
+                >
+                  Golden • Crunchy • Perfect side
+                </p>
+
+                <p class="card-text fs-6 d-none d-md-block text-secondary">
+                  Crispy outside, fluffy inside — the perfect side to any meal.
+                  Enjoy them classic or seasoned with our signature spices.
+                </p>
+
+                <p
+                  class="card-text d-md-none d-block text-secondary"
+                  style="font-size: 13px"
+                >
+                  Golden crispy fries — classic side that goes with everything.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="btn btn-warning text-dark px-3 special-btn"
+                    >🍟 Fries</span
+                  >
+                  <span class="btn btn-dark text-light px-3 special-btn"
+                    >⚡ Fast</span
+                  >
+                  <a
+                    href="#menu"
+                    class="btn btn-warning text-dark px-3 special-btn"
+                    >View Fries</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////////////////////// -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">
+          <span class="text-warning"> Stay Connected With BiteCraft</span>
+        </h2>
+
+        <p class="text-muted mb-5">
+          Follow us for exclusive offers, new menu items, and delicious updates.
+        </p>
+
+        <div class="row justify-content-center g-4">
+          <!-- WhatsApp -->
+          <div class="col-6 col-md-3">
+            <div class="social-card">
+              <i class="fab fa-whatsapp"></i>
+              <h6>WhatsApp</h6>
+              <a href="#">Join Now</a>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <div class="col-6 col-md-3">
+            <div class="social-card">
+              <i class="fab fa-instagram"></i>
+              <h6>Instagram</h6>
+              <a href="#">Follow Us</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="col-6 col-md-3">
+            <div class="social-card">
+              <i class="fab fa-linkedin"></i>
+              <h6>LinkedIn</h6>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <!-- Twitter -->
+          <div class="col-6 col-md-3">
+            <div class="social-card">
+              <i class="fab fa-twitter"></i>
+              <h6>Twitter</h6>
+              <a href="#">Follow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+    <footer class="ultimate-footer text-light">
+      <div class="container py-5">
+        <div class="row g-4">
+          <!-- Brand -->
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="images/logo.png"
+                width="45"
+                class="me-2"
+                alt="BiteCraft"
+              />
+              <h3 class="text-warning mb-0">BiteCraft</h3>
+            </div>
+            <p class="footer-desc">
+              BiteCraft brings you bold flavors, juicy burgers, handcrafted
+              pizzas, creamy pasta and crispy fries — all made with passion.
+            </p>
+
+            <a href="#menu" class="btn btn-warning btn-sm mt-2">
+              🍔 Order Now
+            </a>
+          </div>
+
+          <!-- Links -->
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Explore</h5>
+            <ul class="footer-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Menu -->
+          <div class="col-lg-3 col-md-4">
+            <h5 class="footer-title">Our Menu</h5>
+            <ul class="footer-list">
+              <li>Burgers</li>
+              <li>Pizza</li>
+              <li>Pasta</li>
+              <li>French Fries</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-4">
+            <h5 class="footer-title">Contact</h5>
+            <ul class="footer-contact">
+              <li>📍 Cairo, Egypt</li>
+              <li>📞 +20 100 000 0000</li>
+              <li>✉ info@urbanbite.com</li>
+            </ul>
+
+            <div class="footer-social mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom text-center py-3">
+        © 2025 <span>BiteCraft</span> — Designed with ❤️
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
